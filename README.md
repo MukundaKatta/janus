@@ -1,56 +1,51 @@
-# 🔱 Janus — Open Source Contribution Guide
+# janus — Open Source Contribution Guide. Beginner-friendly open source contribution guide
 
-> **Roman Mythology**: God of Beginnings | Beginner-friendly open source contribution guide
+*Janus — two-faced Roman god of beginnings.*
 
-[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://MukundaKatta.github.io/janus/)
-[![GitHub](https://img.shields.io/github/license/MukundaKatta/janus?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MukundaKatta/janus?style=flat-square)](https://github.com/MukundaKatta/janus/stargazers)
+janus takes its name in that spirit. Open Source Contribution Guide. Beginner-friendly open source contribution guide.
 
-## 🚀 Overview
+## Why janus
 
-Beginner-friendly open source contribution guide
+janus exists to make this workflow practical. Open source contribution guide. beginner-friendly open source contribution guide. It favours a small, inspectable surface over sprawling configuration.
 
-**Tech Stack:** Markdown, Shell
+## Features
 
-## 📦 Quick Start
+- `Step` — exported from `src/janus/core.py`
+- `Workflow` — exported from `src/janus/core.py`
+- Included test suite
+
+## Tech Stack
+
+- **Runtime:** Python
+
+## How It Works
+
+The codebase is organised into `src/`, `tests/`. The primary entry points are `src/janus/core.py`, `src/janus/__init__.py`. `src/janus/core.py` exposes `Step`, `Workflow` — the core types that drive the behaviour.
+
+## Getting Started
 
 ```bash
-git clone https://github.com/MukundaKatta/janus.git
-cd janus
-# Follow setup instructions below
+pip install -e .
 ```
 
-## 🏗️ Project Structure
+## Usage
+
+```python
+from janus.core import Step
+
+instance = Step()
+# See the source for the full API
+```
+
+## Project Structure
 
 ```
 janus/
-├── README.md
-├── LICENSE
 ├── CLAUDE.md
-├── .gitignore
+├── LICENSE
+├── README.md
+├── index.html
+├── pyproject.toml
 ├── src/
-│   ├── main.py
-│   ├── config.py
-│   └── utils.py
 ├── tests/
-│   └── test_main.py
-├── docs/
-│   └── architecture.md
-├── examples/
-│   └── basic_usage.py
-└── .github/
-    └── workflows/
-        └── static.yml
 ```
-
-## 🌐 Live Demo
-
-Visit the landing page: **https://MukundaKatta.github.io/janus/**
-
-## 📄 License
-
-MIT License — © 2026 Officethree Technologies
-
-## 🔱 Part of the Mythological Portfolio
-
-This is project **#janus** in the [100-project Mythological Portfolio](https://github.com/MukundaKatta) by Officethree Technologies.
